@@ -279,8 +279,12 @@ public:
         return false;
     }
 
-    // Display items
+    /**
+     * @brief Display items of the list
+     * @param reverse(optionl) : if true display elements in reversed order
+    */
     void display(bool reverse = false){
+        string out = "";
         if(!is_empty()){
             if(!reverse){
                 Node<Any>* temp = head;
@@ -299,7 +303,7 @@ public:
             }
         }
     }
-
+    
     // clear all list items
     void clear(){
         while(head != nullptr){
