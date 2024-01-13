@@ -313,13 +313,17 @@ public:
         }
         length = 0;
     }
+
+    // return length of the list
     ll Length(){
         return this->length;
     }
+
     // checks if list is empty
     bool is_empty(){
         return head == nullptr;
     }
+
     ~doubly_linked_list(){ 
         clear();       
     }
